@@ -1,6 +1,6 @@
 class DocumentServices {
 
-  static API_ENDPOINT = process.env.API_ENDPOINT || `http://localhost:8080/documents`;
+  static API_ENDPOINT = process.env.REACT_APP_PROD_API_URL || `http://localhost:8080/documents`;
 
   static getDocuments = async () => {
     try {
